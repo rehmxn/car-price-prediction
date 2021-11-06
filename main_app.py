@@ -7,6 +7,11 @@ st.set_page_config(page_title = 'car price prediction',
                           initial_sidebar_state = 'auto')
 import numpy as np
 import pandas as pd
+# Import the individual Python files
+import home
+import data
+import plots
+import predict
 
 # Dictionary containing positive integers in the form of words as keys and corresponding former as values.
 words_dict = {"two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "eight": 8, "twelve": 12}
@@ -51,11 +56,6 @@ def load_data():
     return cars_df[final_columns]
   
 final_cars_df = load_data()
-# Import the individual Python files
-import home
-import data
-import plots
-import predict
 
 # create a dictionary 'pages_dict'
 pages_dict = {
